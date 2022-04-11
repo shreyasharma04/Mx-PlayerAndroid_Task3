@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gallery">
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:text="Gallery"
+        android:textColor="#00BCD4"
+        android:textSize="26dp" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_toRightOf="@id/title"
+        android:layout_marginTop="20dp"
+        android:id="@+id/home"
+        android:text="Menu"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_height="40dp">
+    </Button>
+
+    <ScrollView
+        android:id="@+id/scrollg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/mxaward">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:labelFor="@id/image1"
+                android:text="MX Player Bags 2 wins at the Grand Final of the Asian Academy Creative Awards 2020"
+                android:textColor="@color/black"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/mxlanguage"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:labelFor="@id/image2"
+                android:text="MX offers web-series in various language"
+                android:textColor="@color/black"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/mxshows"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:labelFor="@id/image3"
+                android:textColor="@color/black"
+                android:text="MX offers a wide range of shows to its audience."
+                android:textSize="20dp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/mxaward2"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:labelFor="@id/image4"
+                android:text="MX Player walks away with the Filmfare Black Lady for Best Unscripted (non-fiction) Original (series/special) that was awarded to Times of Music"
+                android:textColor="@color/black"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/mx_takatak"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:labelFor="@id/image5"
+                android:text="MX Takatak"
+                android:textSize="20dp">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
